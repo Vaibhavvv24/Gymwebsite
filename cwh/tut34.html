@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+    .container{
+        display: flex;
+    }
+    .card{
+        border:2px solid red;
+        margin:20px 10px;
+        padding:20px 10px;
+        box-shadow: 5px 15px 10px 20px  purple;
+        /* box-shadow: offset-x offset-y blur radius spread radius color; */
+        /* syntax for box shadow left/right top/bottom color;
+        if u put negative nos then shadow will come in top and left */
+        /* box-shadow: -5px -15px greenyellow; */
+        /* another parameter is blur radius which controls how much blur will shadow become */
+        /* the fourth param is spread radius which signifies how much the color will spread of the shadow */
+    /* box-shadow: inset 5px 15px grey; */
+    /* if u want shadow inside */
+    /* box-shadow: 5px 20px red,10px 15px green; */
+    /* for multiple box shadows */
+    }
+    .card h3{
+        text-shadow: 2px 4px whitesmoke;
+        /* similar param to box-shadow: ; */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1"><h3>C1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit labore, ipsum aliquid culpa, numquam excepturi iure similique quam odit saepe expedita ipsa a, molestiae dolores pariatur aperiam ut? Vel cupiditate quia libero earum non?</p>
+        </div>
+        <div class="card" id="card-2"><h3>C2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit labore, ipsum aliquid culpa, numquam excepturi iure similique quam odit saepe expedita ipsa a, molestiae dolores pariatur aperiam ut? Vel cupiditate quia libero earum non?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h3>C3</h3>       
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque beatae obcaecati voluptatem maxime, error atque, praesentium distinctio architecto, et repellat nobis. Recusandae doloremque dolorum ipsa, corporis, dicta cum veniam nobis soluta magni neque aut.</p>     
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        /* div p{
+            background-color: pink;
+            /* div ke andar koi bhi p par lago hoga */
+       
+        /* div li p{
+            background-color: pink;
+            /* div ke andar li ke andar wala para affect hoga bas */
+            /* div>p{
+                background-color: blue;
+                /* only direct child gets affected so if p is just after div only then property will get selected */
+           
+            div+p{
+                background-color: aqua;
+                /* property is applied when p will have its previous sibling as div or p is just after div */
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <p>This is a para</p>
+            <ul>
+                <li><p>This is para in list</p></li>
+                <li>This will not get affected</li>
+        </div>
+        <p>This is another para</p>
+    </div>
+    <p>This is outermost para</p>
+</body>
+</html>

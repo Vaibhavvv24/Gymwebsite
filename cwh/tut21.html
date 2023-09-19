@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+box-sizing: border-box;
+        }
+        .container{
+            width:900px;
+            border: 2px solid greenyellow;
+            margin:auto;
+            /* for centering an element */
+        }
+        .items{
+            border:4px solid red;
+            margin:8px 5px;
+            padding:7px 4px;
+            background: rgb(255, 0, 157);
+        }
+        #fruits{
+            float: left;
+            width:48%;
+        }
+        #computer{
+            float: right;
+            width:48%;
+            
+        }
+        #stationary{
+            /* float: left; */
+            /* clear: left; */
+            /* clear will ensure no floating element from left overlaps */
+            /* clear left and right together are clear both */
+         clear: both;
+            width:100%;
+            
+        }
+        p,h2{
+            text-align: justify;
+            /* aligns text to right */
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="items">
+        <h2>fruits</h2>
+        <p id="fpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil laboriosam eos illum earum reprehenderit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi laboriosam necessitatibus voluptate illo nemo velit voluptatum, doloribus ratione voluptates. Nostrum atque sint facere earum explicabo asperiores unde aperiam modi. Fugiat eveniet necessitatibus consequuntur dignissimos ducimus illo sit quisquam minima tempore.</p>
+        </div>
+        <div id="computer" class="items">
+            <h2>Computer</h2>
+            <p id="cpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, adipisci! Possimus magni placeat doloribus aspernatur voluptate animi, nesciunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam reprehenderit nulla sunt est iure, mollitia illo fugit quam totam, quos maiores tempore nisi labore earum exercitationem nihil a laborum saepe accusantium voluptatibus at ipsam, cumque accusamus voluptas! Quo dolore expedita quas natus mollitia libero aperiam laudantium, dolor neque repellendus. Hic.</p>
+            </div>
+            <div id="stationary" class="items">
+                <h2>stationary</h2>
+                <p id="spara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis fugit qui beatae vel corporis ab veritatis!</p>
+                </div>
+    </div>
+</body>
+</html>

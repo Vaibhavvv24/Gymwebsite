@@ -1,0 +1,60 @@
+.clock::before{
+    content: "";
+    background: url("time.jpg") no-repeat center center/cover ;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+    top:0px;
+    left:0px;
+    bottom: 0px;
+    position: absolute;
+    opacity: 0.8;
+
+}
+
+body{
+   display: flex;
+   min-height: 100vh;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+.clock{
+    display: flex;
+    color:aliceblue;
+}
+.clock div{
+    margin:8px;
+    position: relative;
+}
+.clock span {
+    width: 100px;
+    height: 80px;   
+    /* setting height and width of span */
+    background: slateblue;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+  .clock .t{
+    font-size: 12px;
+    height: 20px;
+    background-color: rgb(118, 26, 205);
+  }
+  #ampm{
+    width:50px;
+    height:20px;
+    font-size: 16px;
+    bottom: 0;
+    background-color: red;
+    position: absolute;
+    /* so that it does not move from bottom */
+  }

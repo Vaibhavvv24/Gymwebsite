@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature converter</title>
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <div class="maincontainer">
+        <h2 class="heading">Temprature Converter</h2>
+        <div class="t">
+            <label for="C">Celsius: </label>
+            <input onchange="computetemp(event)" type="number" name="C" class="input" id="C" placeholder="Enter Temprature">
+        <!-- //we are adding a event listener which will triggger the function computetemp -->
+        </div>
+        <div class="t">
+            <label for="F">Fahrenheit: </label>
+            <input  onchange="computetemp(event)" type="number" name="F" class="input" id="F" placeholder="Enter Temprature">
+        </div>
+        <div class="t">
+            <label for="K">Kelvin: </label>
+            <input  onchange="computetemp(event)" type="number" name="K" class="input" id="K" placeholder="Enter Temprature">
+        </div>
+        
+    </div>
+    <script src="temp.js">
+
+    </script>
+</body>
+</html>

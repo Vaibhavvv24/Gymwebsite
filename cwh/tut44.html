@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .container{
+            display: grid;
+            row-gap: 1rem;
+            column-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar'
+            'section section aside' ;
+            /* basically it divides the pad=ge in the same ratio in which you have writen here so there are two cols and 3 rows(no of colms is fixed now in each row u should have 3 cols) hence navbar occupies entire first row and section occupies 2/3 of second row */
+            /* so whenver you assign area make a kind of matrix like this */
+        }
+        .item{
+            background-color: aqua;
+            border:3px solid forestgreen;
+            padding: 12px 12px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home contactus About services 
+        </div>
+        <div id="section" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore incidunt ipsam aliquid unde, quos, officiis reiciendis non necessitatibus laudantium cum quod deserunt blanditiis cupiditate totam consequatur, tenetur ratione? Impedit cum quos est possimus error.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquid tempore, aliquam ea quod, dolorum possimus sapiente quis quia soluta, quibusdam sed fugiat voluptatum illo nesciunt debitis velit. Facilis debitis doloremque dolorum molestias quasi saepe error sapiente maiores laudantium praesentium. Accusantium perferendis a deserunt earum optio officiis deleniti porro suscipit? Ratione architecto aperiam, deserunt, minima error explicabo officiis blanditiis adipisci quo, libero sint aliquam quod aliquid incidunt? Nemo distinctio doloremque officiis, cupiditate nesciunt commodi eligendi? Cupiditate natus temporibus et in dolor numquam, error odit. Esse iusto fugiat, quae voluptatibus error, magni placeat quam explicabo nemo facilis quas, saepe distinctio obcaecati.
+        </div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ratione a voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, similique voluptatibus? Facere quasi, provident recusandae deleniti facilis ipsa alias qui molestiae eaque magni quos vitae iste. Ad possimus at reprehenderit nam porro repudiandae accusamus quibusdam repellat similique quia, est blanditiis quod animi, vel, dignissimos consequuntur iusto perferendis minima? Sunt cumque distinctio adipisci sed blanditiis architecto fuga, facilis hic fugit deleniti totam aut provident incidunt, natus iusto nobis unde ab quod, voluptas ut vero odit deserunt ducimus. Dignissimos, suscipit laborum. Nesciunt dolore optio provident repudiandae natus qui consectetur maiores. Iusto similique exercitationem sequi amet. Soluta eveniet quisquam dignissimos fugiat voluptatem ratione!</div>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div> -->
+    </div>
+</body>
+</html>
